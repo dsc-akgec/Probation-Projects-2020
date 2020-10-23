@@ -1,0 +1,240 @@
+.formInputs p {
+  color: red;
+}
+
+.formContentLeft {
+  margin: 0;
+  padding: 2rem 3rem;
+  height: max-content;
+  transition: 0.2s;
+}
+
+.formContentLeft .form {
+  overflow: hidden;
+  padding: 0 40px;
+  margin: auto -40px;
+  display: block;
+  text-align: center;
+}
+
+.form h1 {
+  text-emphasis: left;
+  padding: 1rem 0 0 0;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  color: #202124;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.logo img {
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  border-bottom: 1px solid var(--border-color);
+  width: 200%;
+  padding-bottom: 8px;
+  margin-left: -50%;
+  transition: 0.2s;
+}
+
+.formFields {
+  display: inline-block;
+  font-size: 18px;
+  padding: 24px 0 0;
+  vertical-align: top;
+  width: 100%;
+  text-align: left;
+  transition: 0.2s;
+  /* border: 0 solid transparent;
+  border-width: 0 24px; */
+}
+
+.formInputs {
+  padding: 8px 0;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+}
+
+.formInputs label {
+  color: var(--text-color);
+  line-height: 41px;
+  transition: 0.2s;
+}
+
+.formInput:focus {
+  border: 1px solid var(--google-blue);
+  box-shadow: 0 2px 8px 1px var(--google-med-lite-blue);
+}
+
+.formInputs select:focus {
+  border: 1px solid var(--google-blue);
+  box-shadow: 0 2px 8px 1px var(--google-med-lite-blue);
+}
+
+.formInputs input,
+.formInputs select {
+  width: 100%;
+  padding: 7px 9px;
+  text-align: left;
+  display: block;
+  margin: 1px 1px 0 1px;
+  line-height: 24px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  transition: 0.2s;
+}
+
+.formInputBtn {
+  margin: 32px 0;
+  text-decoration: none;
+  padding: 12px 30px;
+  color: #fff;
+  display: inline-block;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(-1px);
+  background: var(--google-blue);
+  border: none;
+  border-radius: 3px;
+}
+
+.formInputBtn:hover {
+  color: white;
+  background-color: #185abc;
+  box-shadow: -4px 4px 16px var(--button-shadow-color);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.formInputBtn:active {
+  transform: translate(0px);
+  box-shadow: -2px 2px 4px #b3b3b3;
+  border-radius: 3px;
+}
+
+.formInputBtn:focus {
+  border: none;
+}
+
+.error {
+  width: 70%;
+  background-color: var(--google-med-lite-red);
+  color: var(--google-dark-red);
+  border-radius: 6px;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+  padding: 7px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.error p {
+  padding-left: 1rem;
+}
+
+@media (max-width: 992px) {
+  .form h1 {
+    padding: 5px 0 0 0;
+    text-align: center;
+  }
+  .logo {
+    width: 110%;
+    margin-left: -5%;
+  }
+  .formContentLeft {
+    padding: 1rem 2rem;
+  }
+  .formFields {
+    padding: 10px 0 0 0;
+  }
+  .formInputBtn {
+    margin: 15px 0 0 0;
+  }
+  .formInputs label {
+    line-height: 2;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 5px 7px;
+  }
+}
+
+@media (max-width: 786px) {
+  .form h1 {
+    padding: 16px 0 10px 0;
+  }
+  .formContentLeft {
+    padding: 2rem 3rem;
+  }
+  .formInputBtn {
+    margin: 25px 0 0 0;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 7px 9px;
+  }
+}
+
+@media (max-width: 630px) {
+  .form h1 {
+    padding: 12px 0 10px 0;
+  }
+  .formContentLeft {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .formFields {
+    padding: 8px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .formInputs label {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .formContentLeft .form {
+    margin: 0;
+    padding: 0;
+  }
+  .formContentLeft {
+    margin: 0;
+    padding: 1rem 0.5rem;
+  }
+  .formInputs {
+    grid-template-columns: 1fr;
+  }
+  .formInputs label {
+    line-height: 2;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 12px;
+  }
+  .formInputs input,
+  .formInputs select {
+    padding: 5px 7px;
+    width: 90%;
+  }
+  .formInputs input,
+  .formInputs select {
+    margin: 0 auto;
+  }
+}

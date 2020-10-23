@@ -1,0 +1,12 @@
+.EventsList {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "Google Sans", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  justify-content: center;
+}

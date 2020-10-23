@@ -1,0 +1,99 @@
+.ShowcaseContact {
+  margin-top: 70px;
+  font-family: "Google Sans", sans-serif;
+  min-height: 500px;
+  background: #fff;
+}
+
+.Container {
+  margin: 0 auto;
+  max-width: 1170px;
+  background: white;
+  transition: 0.2s;
+}
+
+.registerHeader {
+  font-size: 48px;
+  font-weight: 400;
+  color: #202124;
+  line-height: 1.5;
+  text-align: center;
+  padding: 2rem;
+  transition: 0.2s;
+}
+
+.wrapper {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  margin-bottom: 2rem;
+  transition: 0.2s;
+}
+
+.formContentRight {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.formContentRight .imgContainer {
+  width: 100%;
+}
+
+@media (max-width: 1220px) {
+  .Container {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Container {
+    max-width: 750px;
+  }
+  .wrapper {
+    grid-template-columns: 3fr 6fr;
+  }
+}
+
+@media (max-width: 786px) {
+  .Container {
+    max-width: 580px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .registerHeader {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .Container {
+    max-width: 480px;
+  }
+  .registerHeader {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Container {
+    max-width: 370px;
+  }
+  .registerHeader {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .Container {
+    max-width: 250px;
+  }
+  .registerHeader {
+    font-size: 24px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
