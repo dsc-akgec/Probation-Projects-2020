@@ -1,0 +1,31 @@
+/*/function myFunction() {
+  var x = document.getElementById("mytopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+document.querySelector(".icon").addEventListener("click", myFunction);/*/
+$(document).ready(function(){
+	$('.icon').click(function(){
+		$('.topnav ul li').toggleClass('responsive')
+	})
+})
+
+
+var index=0;
+show();
+function show(){
+	var i;
+	var slides=document.getElementsByClassName("slide");
+	for(i=0;i<slides.length;i++){
+		slides[i].style.display="none";
+	}
+	index=index+1;
+	if(index>slides.length){
+		index=1;
+	}
+	slides[index-1].style.display="block";
+	setTimeout(show,3000);
+}
