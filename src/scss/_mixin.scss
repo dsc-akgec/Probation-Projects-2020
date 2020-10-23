@@ -1,0 +1,88 @@
+// Mixin Functions
+
+// mixin for tiile of section
+@mixin section-title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-bottom: 4rem;
+  color: #413e66;
+  letter-spacing: 2px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: rgb(221, 221, 221);
+    bottom: -11px;
+    left: calc(50% - 65px);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    background: $color-primary-medium;
+    bottom: -12px;
+    left: calc(50% - 1.25rem);
+  }
+}
+
+
+// Mixin for Animated Button
+@mixin animated-btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &-white {
+    background-color: $color-primary-dark;
+    color: #777;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &-white::after {
+    background-color: $color-primary-dark;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.5) scaleY(1.6);
+    opacity: 0;
+  }
+
+  &-animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
