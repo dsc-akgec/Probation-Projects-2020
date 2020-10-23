@@ -1,0 +1,38 @@
+.dom{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.dom-row{
+    text-align: center;
+}
+
+.dom-cont{
+    padding:3%;
+    text-align: center;
+}
+
+.dom-photo{
+    height:200px;
+    width:200px;
+}
+
+.dom-card{
+    border-radius:10px;
+    text-align: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.dom-heading{
+    text-align: center;
+}
+
+.dom-heading h3{
+    margin-top: 2rem;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: black;
+    letter-spacing: 2px;
+}

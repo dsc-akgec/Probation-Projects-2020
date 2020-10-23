@@ -1,0 +1,25 @@
+.utube{
+    padding:20px;
+    background-image: url('../../../../assets/pln-back.PNG');
+    margin: 0 2% 5%;
+    border-radius: 10px;
+}
+
+.utube h1{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(0, 69, 158);
+    text-shadow: 1.5px 1.5px #ffffff;
+}
+
+.utube h3{
+    text-align: center;
+    color:rgb(15, 69, 139);
+    text-shadow: 1px 1px #ffffff;
+    margin-bottom: 20px;
+}
+
+.youtube-col{
+    text-align: center;
+}

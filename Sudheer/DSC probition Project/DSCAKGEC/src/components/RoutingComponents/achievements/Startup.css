@@ -1,0 +1,42 @@
+.startup-card{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.startup-card h2,h5{
+    padding:5px;
+}
+
+
+.startup-div{
+    width:28rem;
+    background-color: #ebeef8;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:2rem 0;
+    box-shadow: .1rem .1rem 0.5rem rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.startup-bck-img{
+    height: 25rem;
+    width: 100%;
+    object-fit:cover;
+    -webkit-clip-path:polygon(0 0, 100% 100%, 100% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 41%, 0 41%);
+}
+
+.hihome-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit:cover;
+    border-radius: 50%;
+    margin-top: -22rem;
+    z-index:0;
+    border: 0.3rem solid #ebeef8;
+}
+
