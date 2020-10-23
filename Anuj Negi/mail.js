@@ -45,7 +45,7 @@ const getEmailData = (data) => {
   return data;
 };
 
-console.log(process.env, process.env.PASSWORD);
+// console.log(process.env, process.env.PASSWORD);
 
 const sendEmail = (data) => {
   const smtpTransport = mailer.createTransport({

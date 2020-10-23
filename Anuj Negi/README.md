@@ -28,7 +28,7 @@ This command to install all the dependencies for nodejs to work.
 npm install
 ```
 
-This command to install all the dependencies for React to work.  
+This command to install all the dependencies for React to work. (This may take some time.)
 <br>
 3- now come back to the root directory and write the command
 
