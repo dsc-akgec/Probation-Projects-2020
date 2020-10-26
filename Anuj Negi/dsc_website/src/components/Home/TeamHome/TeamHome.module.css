@@ -1,0 +1,138 @@
+.TeamHome {
+  margin: 0 auto;
+  padding: 2rem 0 5rem 0;
+  transition: 0.2s;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+  transition: 0.2s;
+}
+
+.TeamHome .teamHeader {
+  font-size: 48px;
+  font-family: "Google Sans", sans-serif;
+  line-height: 1.2;
+  padding: 1rem 0 3rem 0;
+  font-weight: 400;
+  transition: 0.2s;
+}
+
+.TeamHome .teamContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TeamHome .teamContent img {
+  width: 540px;
+  transition: 0.2s;
+}
+
+.TeamHome .teamContent .teamBody p {
+  font-size: 20px;
+  font-family: "Google Sans", sans-serif;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+  transition: 0.2s;
+}
+
+.TeamHome .teamContent .teamBody {
+  padding: 1rem 4rem;
+  transition: 0.2s;
+}
+
+.TeamHome .teamContent .teamBody a {
+  padding: 12px 30px;
+  text-decoration: none;
+  color: white;
+  background: var(--google-blue);
+  border-radius: 2px;
+  display: inline-block;
+  transition: 0.2s;
+  font-size: 14px;
+  font-weight: 500;
+  transform: translateY(-1px);
+}
+
+.TeamHome .teamContent .teamBody a:hover {
+  background: var(--google-dark-blue);
+  box-shadow: -4px 4px 8px var(--button-shadow-color);
+  border-radius: 2px;
+}
+
+.TeamHome .projectsContent .teamBody a:active {
+  transform: translateY(0px);
+}
+
+@media (max-width: 1199px) {
+  .Container {
+    padding: 0 10px;
+  }
+  .TeamHome .teamContent .teamBody {
+    padding: 1rem 1.3rem;
+  }
+  .TeamHome .teamContent img {
+    width: 480px;
+  }
+}
+
+@media (max-width: 991px) {
+  .TeamHome .teamContent img {
+    width: 380px;
+  }
+}
+
+@media (max-width: 785px) {
+  .TeamHome .teamContent img {
+    width: 280px;
+  }
+  .TeamHome .teamContent .teamBody p {
+    font-size: 16px;
+    padding-bottom: 1.5rem;
+  }
+  .TeamHome .teamHeader {
+    text-align: center;
+  }
+}
+
+@media (max-width: 599px) {
+  .TeamHome .teamContent img {
+    display: none;
+  }
+  .TeamHome .teamHeader {
+    font-size: 36px;
+    padding-bottom: 1rem;
+  }
+  .TeamHome .teamContent .teamBody p {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 2rem;
+  }
+  .TeamHome {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .TeamHome .teamHeader {
+    font-size: 30px;
+    padding-bottom: 1rem;
+  }
+  .TeamHome .teamContent .teamBody {
+    padding: 0.2rem;
+  }
+  .TeamHome .teamContent .teamBody p {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 2rem;
+  }
+  .TeamHome {
+    text-align: center;
+    padding: 1rem 0.8rem 2rem 0.8rem;
+  }
+}

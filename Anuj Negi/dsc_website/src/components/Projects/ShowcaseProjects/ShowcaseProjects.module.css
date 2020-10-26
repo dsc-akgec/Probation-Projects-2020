@@ -1,0 +1,53 @@
+.ShowcaseProjects {
+  margin-top: 70px;
+  border-bottom: 1px solid var(--border-color);
+  height: 300px;
+  background: url("../../../assets/background/background11.png") center
+    center/cover no-repeat;
+  background-attachment: fixed;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.topContent {
+  font-family: "Google Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.projectsHeader {
+  font-size: 56px;
+  font-weight: 400;
+  padding: 2rem 0;
+  transition: 0.2s;
+  /* color: #202124; */
+  color: #fff;
+}
+
+.projectsText {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+  /* color: #202124; */
+  color: #fff;
+}
+
+@media (min-width: 501px) {
+  .projectsText {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectsHeader {
+    font-size: 36px;
+  }
+  .projectsText {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+}

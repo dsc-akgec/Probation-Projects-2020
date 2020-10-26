@@ -1,0 +1,15 @@
+.Logo {
+  height: 40.36px;
+  transition: 0.2s;
+}
+
+@media (max-width: 450px) {
+  .Logo {
+    height: 30.36px;
+  }
+}
+@media (max-width: 320px) {
+  .Logo {
+    height: 25.36px;
+  }
+}

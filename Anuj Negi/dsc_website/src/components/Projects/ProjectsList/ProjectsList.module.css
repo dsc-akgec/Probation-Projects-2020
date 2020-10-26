@@ -1,0 +1,10 @@
+.ProjectsList {
+  background: #fff;
+  padding: 2rem 0;
+}
+
+.Container {
+  max-width: 1170px;
+  margin: 0 auto;
+  font-family: "Google Sans", sans-serif;
+}
