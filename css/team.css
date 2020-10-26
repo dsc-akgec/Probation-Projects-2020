@@ -1,0 +1,113 @@
+.navbar-fixed-top{
+  height: 9%;
+}
+.navbar-right{
+  color:#495E5D ;
+  font-family:sans-serif;
+  font-weight: bold;
+  font-size:132%;
+  letter-spacing: 2px;
+  padding-left: 4px;
+  padding-top: 4px;
+}
+
+.container{
+  margin-top:4%;
+  margin-bottom:3%;
+}
+#part1{
+  border: .01px solid;
+  padding: 30px;
+  text-align:center;
+  box-shadow: 5px 10px #DBE0E3;
+  margin-top:4%;
+  overflow:auto;
+}
+#part2{
+margin-top:5%;
+}
+
+.desc{
+  font-weight:100;
+  font-size:25px;
+  font-family:Arial;
+}
+
+.teamtext{
+font-family: 'IBM Plex Mono', monospace;
+font-weight:520;
+font-size:430%;
+letter-spacing: .15em;
+text-align:center;
+margin-top:6.5%;
+margin-bottom:4%
+}
+#red{color:red;}
+#blue{color:blue;}
+#green{color:green;}
+#yellow{color:#F1C40F ;}
+
+.card{
+  border:1px solid #CAD0D0;;
+  margin-top:12%;
+  margin-bottom: 13%;
+  height: 450px;
+}
+.card:hover{
+    box-shadow:  1px 1px 5px 3px  #DBE0E3;
+}
+.card-body{
+  padding:3px 7px 0px 8px;
+}
+.card-title, .card-text{
+  font-size: 30px;
+  text-align:center;
+  font-family: sans-serif;
+  line-height: 1.5em;
+}
+#logos{
+  padding-top: 8%;
+}
+
+
+footer{
+  padding-top:3%;
+  text-align: center;
+  font-size: 28px;
+}
+  .fa-facebook { color: #3B5998;}
+  .fa-instagram { color: #BC32F7 ;}
+  .fa-linkedin {  color: #007BB5;}
+  .fa-google { color: #DD4B39;}
+
+  .fa {
+    font-size: 35px;
+    padding-left:3%;
+    padding-right:3%;
+  }
+  .fa:hover {
+    opacity: .5;
+  }
+
+  @media only screen and (min-width:360px) and (max-width:1400px)
+{
+  .logo{
+    width:270px;
+  height: 40px;
+  padding-bottom:1px;
+  }
+  .card{
+    height:480px;
+  }
+  #part1{
+    margin-top:25%;
+  }
+  #part2{
+    padding-top: 8%;
+    width:55%;
+  }
+  .teamtext{
+  font-weight:350;
+  font-size:350%;
+}
+}
