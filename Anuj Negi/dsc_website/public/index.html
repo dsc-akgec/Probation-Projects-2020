@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Poppins:wght@400;500&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://www.gstatic.com/devrel-devsite/prod/v85e39fe21f53c758adf6c791fb94a7a2182cff2705b3dc8ed7c59fc745471159/developers/images/favicon.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans:400,500,700|Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>DSC | AKGEC</title>
+    <!-- <script src="https://apis.google.com/js/client.js"></script> -->
+    <style>
+      .container{
+        position: absolute;
+        left: 50%;
+        top:45%;
+        transform: translate(-50%,-50%);
+      }
+
+      .ball-container{
+        position: absolute;
+        left: 50%;
+        top: 180%;
+        transform: translate(-50%,-50%);
+      }
+
+      .ball{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        float: left;
+        margin-left: 20px;
+        animation: move1 2s linear infinite;
+      }
+      .ball:nth-child(1){
+        background: #4285f4;
+        animation-delay: 0s;
+      }
+
+      .ball:nth-child(2){
+        background: #ea4335;
+        animation-delay: 0.25s;
+      }
+
+      .ball:nth-child(3){
+        background: #fbbc05;
+        animation-delay: 0.5s;
+      }
+
+      .ball:nth-child(4){
+        animation-delay: 0.75s;
+        background: #34a853;
+      }
+
+      @keyframes move1{
+        0%{
+          transform: translateY(0px);
+        }
+        50%{
+          transform: translateY(-25px);
+        }
+      }
+
+      .loader-logo{
+        height: 100px;
+      }
+
+      .loader-logo img{
+        height: 100%;
+      }
+
+      @media(max-width: 991px){
+        .loader-logo{
+          height: 70px;
+        }
+      }
+
+      @media(max-width: 599px){
+        .loader-logo{
+          height: 50px;
+        }
+        .ball{
+          height: 15px;
+          width: 15px;
+          margin-left: 15px;
+        }
+        .ball-container{
+          top: 200%;
+        }
+      }
+
+      @media(max-width:400px){
+        .loader-logo{
+          height: 30px;
+        }
+        .ball{
+          height: 10px;
+          width: 10px;
+          margin-left: 10px;
+        }
+        .ball-container{
+          top: 250%;
+        }
+      }
+
+    </style>
+    </head>
+    <body>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+      <div class="loader-container">
+        <div class="container">
+          <div class="loader-logo">
+            <img src="./logo_png_lg.png" alt="logo">
+          </div>
+          <div class="ball-container">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
+    <!-- <script type="text/javascript" src="https://apis.google.com/js/api.js" async defer crossorigin="anonymous" onload="this.onload=function(){};" onreadystatechange="if(this.readyState==='complete') this.onload()"></script> -->
+
+  </body>
+</html>
