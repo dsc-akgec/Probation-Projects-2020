@@ -20,9 +20,6 @@ Follow the steps to get the project running on your machine.
 npm install
 ```
 
-<br>
-2-
-
 ```
 npm start
 ```
