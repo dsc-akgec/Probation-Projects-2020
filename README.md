@@ -14,7 +14,7 @@ Probation Project for DSC-AKGEC.
 
 Follow the steps to get the project running on your machine.  
 <br>
-1 - Open the directory using any terminal and run
+Open the directory using any terminal and run
 
 ```
 npm install
