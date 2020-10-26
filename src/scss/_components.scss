@@ -1,0 +1,389 @@
+// ABOUT_SECTION VIDEO_BUTTON
+.about-section-2 {
+  .play-btn {
+    margin: auto;
+    width: 94px;
+    height: 94px;
+    background: radial-gradient($title-color 50%, rgba($title-color, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  .play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  .play-btn:before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(163, 163, 163, 0.4);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+
+  .play-btn:hover::after {
+    border-left: 15px solid $title-color;
+    transform: scale(20);
+  }
+
+  .play-btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+}
+
+// DOMAIN_SECTION_CARDS
+
+#section-domains {
+  .card {
+    border: 0;
+    padding: 0 3rem;
+    margin-bottom: 60px;
+    position: relative;
+    background: transparent;
+  }
+  .card-img {
+    position: relative;
+    width: calc(100% + 60px);
+    height: 16rem;
+    margin-left: -30px;
+    overflow: hidden;
+    z-index: 9;
+    border-radius: 1rem;
+    box-shadow: 0px 0.8rem 1rem rgba(0, 0, 0, 0.3);
+
+    img {
+      position: absolute;
+      height: auto;
+      max-width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .card-body {
+    z-index: 10;
+    background: #fff;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 1rem;
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin-top: -60px;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+  }
+  .card-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    a {
+      color: $title-color;
+      transition: 0.3s;
+      font-size: 1.5rem;
+    }
+  }
+  .card-text {
+    color: $color-gray;
+    font-size: 0.9rem;
+  }
+  .read-more a {
+    color: $title-color;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    transition: 0.3s;
+  }
+
+  .card .read-more a:hover {
+    color: $color-primary-dark;
+  }
+
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  .card:hover .card-body {
+    border-color: $color-primary-dark;
+  }
+  .card:hover .card-body .card-title a {
+    color: $color-primary-dark;
+  }
+  .card:hover .card-body .read-more a {
+    color: $color-primary-dark;
+  }
+}
+
+// EVENT_SECTION_CARD
+
+#section-events {
+  .card {
+    margin-top: 2rem;
+    padding: 0 1rem;
+    align-items: center;
+    border-radius: 0.8rem;
+    border: none;
+    box-shadow: 0 0.2rem 1rem rgba($color-black, 0.2);
+    background-color: rgba($color-primary-light, 0.5);
+    transition: all 0.5s;
+    .card-img {
+      transform: translateY(-3rem);
+      box-shadow: 0 1rem 1rem rgba($color-black, 0.2);
+      height: 16rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        border-radius: 4px;
+      }
+    }
+
+    .card-body {
+      .card-title {
+        transform: translateY(-2rem);
+        font-size: 1.3rem;
+        color: $title-color;
+        text-shadow: 0 0.2rem 2px rgba($color-black, 0.1);
+        text-align: center;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 1.7rem;
+      }
+    }
+    .list-group-flush {
+      border: none;
+      transform: translateY(-3rem);
+    }
+    .list-group {
+      z-index: -1;
+      .list-group-item {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: $color-black;
+        &:not(:last-of-type) {
+          border-bottom: 2px solid $color-primary-dark;
+        }
+      }
+      .fas {
+        color: $color-blue;
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .card:hover {
+    background-color: rgba($color-primary-medium, 0.6);
+  }
+  .buttons {
+    transform: translateY(-2rem);
+    a {
+      color: $title-color;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .register {
+      background: $color-primary-dark;
+      padding: 0.5rem 1rem;
+      color: #fff;
+      border-radius: 1rem;
+    }
+    .more {
+      color: $color-red;
+    }
+  }
+}
+
+// ACHIEVEMENT_SECTION_CARD
+#achievement-section {
+  .card {
+    border: 0;
+    padding: 9rem 20px 20px 20px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1.7rem;
+    transition: 0.4s all ease;
+
+    .card-body {
+      z-index: 10;
+      padding: 15px 30px;
+      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      transition: ease-in-out 0.3s;
+      border-radius: 5px;
+      opacity: 0;
+    }
+    .card-title {
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .read-more a {
+      color: #656262;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 12px;
+      transition: 0.4s;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .card:hover .card-body {
+    background: rgba(#fff, 0.8);
+    opacity: 1;
+  }
+  .card:hover .read-more a,
+  .card:hover .card-title,
+  .card:hover .card-title a,
+  .card:hover .card-text {
+    color: $title-color;
+  }
+  .card:hover {
+    transform: scale(1.04);
+  }
+}
+
+// TEAM_CARD
+.team-card {
+  h3 {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .member {
+    text-align: center;
+    margin: 20px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 17px -1px rgb(182, 182, 182);
+    border-radius: 5px;
+
+    .member-info {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: 0.2s;
+    }
+
+    .member-info-content {
+      position: absolute;
+      left: 50px;
+      right: 0;
+      bottom: 0;
+      transition: bottom 0.4s;
+
+      h4 {
+        font-weight: 700;
+        margin-bottom: 2px;
+        font-size: 18px;
+        color: #fff;
+      }
+
+      span {
+        text-transform: uppercase;
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+        color: #fff;
+      }
+    }
+
+    .social {
+      position: absolute;
+      left: -50px;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      transition: left ease-in-out 0.3s;
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+
+      a {
+        transition: color 0.3s;
+        display: block;
+        color: #fff;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        color: $color-blue;
+      }
+
+      i {
+        font-size: 18px;
+        margin: 0 2px;
+      }
+    }
+
+    &:hover .member-info {
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.9) 0%,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 212, 255, 0) 100%
+      );
+      opacity: 1;
+      transition: 0.4s;
+    }
+
+    &:hover .member-info-content {
+      bottom: 30px;
+      transition: bottom 0.4s;
+    }
+
+    &:hover .social {
+      left: 0;
+      transition: left ease-in-out 0.3s;
+    }
+  }
+}

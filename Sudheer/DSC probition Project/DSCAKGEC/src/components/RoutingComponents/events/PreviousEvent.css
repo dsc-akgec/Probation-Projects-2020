@@ -1,0 +1,34 @@
+.DSC-Youtube-heading{
+    text-align: center;
+    margin-top: 20px;
+    padding:10px;
+}
+
+.DSC-Youtube-button{
+    height: 2.5rem;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(49, 166, 233);
+    background-color: transparent;
+    color:rgb(13, 72, 148);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.DSC-Youtube-button:hover{
+    border-color: black;
+    background-color: rgb(49, 166, 233);
+    color:white;
+    transform: scale(1.1);
+}
+
+.link-center{
+    text-align: center;
+}
+
+.previous-event-div{
+    width: 100%;
+    text-align: center;
+}

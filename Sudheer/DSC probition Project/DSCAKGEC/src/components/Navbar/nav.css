@@ -1,0 +1,76 @@
+.AppBarLinks {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    margin-bottom: 4px;
+  }
+  
+  .textHover:hover {
+    transform: scale(1.05);
+  }
+  
+  div.fixing{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0 10px 6px -6px rgba(0,0,0,0.5);
+  }
+  
+  .textHover{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+  }
+  
+  
+  .photoStyle{
+    height: 35px;
+    width: 440px;
+    margin-left: 5px;
+  }
+  
+  .brand{
+    font-weight : bold;
+    font-size : 1.7rem;
+    margin-left : 1rem;
+  }
+  
+  @media (max-width: 990px){
+  
+    .photoStyle{
+      height: 35px;
+      width: 250px;
+    } 
+  
+    .brand{
+      font-weight : bold;
+      font-size : 1.7rem;
+      margin-left : 0.2rem;
+    }
+
+    .in-center{
+      text-align: center;
+      background-color: white;
+    }
+  
+  }
+  
+  .bar{
+     height: 60px;
+     margin: 0;
+     padding: 0;
+  }
+
+  ReactBootStrap.Nav{
+    text-align: center;
+  }
+
+  Link::hover{
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  
+  
