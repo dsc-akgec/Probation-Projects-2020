@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSCtrial</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="dsc1.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+<body id="top"> 
+	<nav>
+		<div class="topnav" id="mytopnav">
+			<ul class="navbarleft">
+			<li class="active"><a href="#top">DSC AKGEC</a></li>
+			<li class="dropdown1">ABOUT US
+				<ul class="dropdown-menu1">
+				    <li><a href="#team">TEAM</a></li>
+				    <li><a href="#lead">LEAD</a></li>
+					<!-- <li><a href="#">EVENT GALLERY</a></li> -->
+					<li><a href="#about">MORE</a></li>
+				</ul>
+			</li>
+			<li class="dropdown1">PROJECTS AND ACHIEVMENTS
+				<ul class="dropdown-menu1">
+					<li><a href="#">..</a></li>
+					<li><a href="#">.. </a></li>
+					<li><a href="#">..</a></li>
+				</ul>
+			</li>
+			<li class="dropdown1"> UPCOMING EVENTS
+				<ul class="dropdown-menu1">
+					<li><a href="hackfest.html">DSC Hackfest</a></li>
+					<li><a href="GithubWorkshop.html">GitHub Workshop</a></li>
+					<li><a href="learningWeek.html">Week Of Learning</a></li>
+				</ul>
+			</li>
+			<li class="rightnav" style="margin-right: 40px;">
+				<a href="#contact">CONTACT US</a>
+			</li>
+			<!--<li class="dropdown1 rightnav">CONTACT US
+				 <ul class="dropdown-menu1">
+					<li><a href="#">E-MAIL</a></li>
+					<li><a href="#">CONTACT NUMBER</a></li>
+					<li><a href="#">MORE</a></li>
+				</ul> 
+			</li>-->
+		</ul>
+		<ul>
+			<li class="icon rightnav">
+				<!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+                   <i class="fa fa-bars"></i>
+                </a>
+			</li>
+		</ul>
+		</div>
+	</nav>
+	<!-- slide show -->
+	<div class="slide-container">
+		<div class="effect slide">
+			<img src="dscpic\slideshow1.png" style="min-height: 250px; min-width: 1200px; position: sticky;">
+		</div>
+		<div class="effect slide">
+			<img src="dscpic\slideshow2.png" style="min-height: 250px; min-width: 1200px;">
+		</div>
+		<div class="effect slide">
+			<img src="dscpic\slideshow3.png" style="min-height: 250px; min-width: 1200px;">
+		</div>
+	</div>
+	<div id="about" style="background-color: white;">
+		<h1 style="text-align: center;font-size: 5em;text-shadow: rgba(100,0,0,0.8); background-color: rgba(162, 164, 245,1);min-height:120px; letter-spacing: 5px; border-top: solid 5px black; border-bottom: black solid 5px;">Developer Student Clubs</h1>
+		<div class="row">
+			<div class="col-lg-6 col-sm-12">
+				<p style="margin-top: 90px; margin-left: 50px; border-left: solid 7px rgba(162, 164, 245,1); padding-left: 7px; font-size: 20px;"><strong style="letter-spacing: 2px; font-size: 1em;"> DEVELOPER STUDENT CLUBS </strong> are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a DSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.</p>
+				<iframe src="https://www.youtube.com/watch?v=ScJ9aL0b65E" height="200" width="600" style="margin-left: 50px;"></iframe>
+			</div>
+			<div class="col-lg-6 col-sm-12">
+				<a href="https://developers.google.com/community/dsc" target="blank">
+					<img src="dscpic\gif-final.gif" id="bs" style="max-height: 500px;margin-top: 0; padding-left: 0; margin-left: 0;">
+					<p id="go" style="font-size: 20px; letter-spacing: 2px; text-align: center; margin-top: 0;text-decoration: none;">GO TO DSC GOOGLE.</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div style="background-color:rgb(162, 164, 245); outline: none; margin-top: 0px;" > 
+	    <div style="background-color: rgb(162, 164, 245); margin-top: 0px;margin-left: 0;">
+		<h1 style="font-size: 80px; padding-left: 30px; text-align: center; outline: none;">
+		  DSC AKGEC</h1>
+		</div>
+		<div style="background-color: rgb(232, 234, 235)";><h2 style="text-align: center;">DOMAINS</h2>
+			<div class="row container" style="margin: auto; cursor: pointer;">
+				<div class="col-lg-3 col-md-6 col-sm-12 container1" onclick="appdev()">
+						<img src="https://thumbs.dreamstime.com/z/developer-create-application-mobile-app-development-flat-cartoon-miniature-illustration-vector-graphic-developer-create-135757695.jpg" style="border:10px solid black; max-height: 300px; max-width: 300px;min-width: 300px; min-height: 300px;" class="image1">
+					<div class="middle1">
+						<div class="text1">App Development</div>
+					</div>
+				</div>
+					<!--  <p style="margin-left: 33%; border-left: 10px solid rgb(162, 164, 245); margin-top: 10px;  padding-left: 10px; max-width: 310px;">
+						Mobile app development is the act or process by which a Mobile App is developed for devices.
+
+                        Application software developers have to consider a long array of screen sizes, hardware specifications, and configurations because of intense competition in mobile software and changes within each of the platforms. Mobile app development has been steadily growing, in revenues and jobs created.
+					</p>-->
+						<div class="col-lg-3 col-md-6 col-sm-12 container1" onclick="webdev()">
+						<img src="https://www.pngfind.com/pngs/m/539-5399083_web-development-website-design-cartoon-hd-png-download.png"style="border:10px solid black; max-height: 300px; max-width: 300px; min-height: 300px; min-width: 300px" class="image1">
+					
+					    <div class="middle1">
+						<div class="text1">Web Development</div>
+					    </div>
+				        </div>
+				
+				<div class="col-lg-3 col-md-6 col-sm-12 container1" onclick="machinelearning()">
+						<img src="https://www.kindpng.com/picc/m/346-3460736_app-analysis-data-and-google-play-data-cartoon.png" style="border: 10px solid black; max-height: 300px; max-width: 300px; min-height: 300px; min-width: 300px" class="image1">
+					
+					<div class="middle1">
+						<div class="text1">Machine Learning</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 container1" onclick="management()">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT0fKAxSl1Z94TCazRMkOHGEnzn0CAIs0uhNQ&usqp=CAU"style="border: 10px solid black;max-height: 300px; min-height: 300px;max-width: 300px;min-width: 300px;" class="image1">
+					 
+										<div class="middle1">
+						<div class="text1">Managerial</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div style="margin-left: 13%; border-left: 8px solid rgb(162, 164, 245); max-width: 80%; margin-top: 13px; display: none;" class="domain" id="app" >
+					<div style="background-color:rgb(162, 164, 245); margin-left: 0; text-align: center; min-height: 40px; padding: auto; letter-spacing: 3px; ">
+						<h3>APP DEVELOPMENT</h3>
+					</div>
+					<p style="padding-left: 10px;">Mobile app development is the act or process by which a Mobile App is developed for devices.
+
+                        Application software developers have to consider a long array of screen sizes, hardware specifications, and configurations because of intense competition in mobile software and changes within each of the platforms. Mobile app development has been steadily growing, in revenues and jobs created.</p>
+                 <p style="padding-left: 10px;">
+                     As part of the development process, mobile UI design is also essential in the creation of mobile apps.
+
+                     Mobile app development is becoming more critical for
+
+                     many businesses with more than 3 billion people
+
+                    worldwide using smartphones; more than 1.7 billion using tablets as of 2020. Users, on average, spend 90 percent of their mobile time in apps and there are more than 700 million apps downloads from various app stores.
+                        </p>
+				</div>
+				
+			</div>
+			<div>
+				<div style="margin-left: 13%; border-left: 8px solid rgb(162, 164, 245); max-width: 80%; margin-top: 13px; display: none;" class="domain" id="web" >
+					<div style="background-color:rgb(162, 164, 245); margin-left: 0; text-align: center; min-height: 40px; padding: auto; letter-spacing: 3px; ">
+						<h3>WEB DEVELOPMENT</h3>
+					</div>
+					<p style="padding-left: 10px;">Websites are the basic requirements for any business, startups and play a major role in digital marketing.
+
+                     With all these added advantages web development is a skill with high demand in the market. Web development is the work involved in
+
+                      developing a website for the Internet or intranet.
+
+                       But before beginning to throw ourselves in any domain, we should know its basic requirements.</p>
+                 <p style="padding-left: 10px;">
+                     Tech Giants like Google and Facebook are working in this field and bringing out new developments as we speak. New versions of JS(ES 2017), languages like TypeScript (Developed by Microsoft) are coming into play;
+
+                     Updates in frameworks like React, Angular, Vue and promotion of MEAN stack (MongoDB, Express, Angular, NodeJS) in the tech industry and many more.
+
+                        </p>
+                        <p style="padding-left: 10px;">
+                        Such developments and the amount of internet traffic prove to be a boon to web development. Adding this skill to your resume is an added advantage.
+                        Web development is broadly divided into: Back-end development and Front-end development. To have the best User Experience(UX), we not only need a catchy User Interface(UI) but also smooth working of the website. In order to be a successful web developer, one should have a knowledge of both front end and back end. There are many JS frameworks in the market today that have the best User Interface which helps in enhancing the user experience of a website.
+                        </p>
+                        <p style="padding-left: 10px;">
+                        	For web development, there are multiple ways to get started. One is to learn JavaScript, as most advanced frameworks are based on this language and its extension (JSX). Other languages involved in this domain are python, leading to Django,
+
+                          Java and more. <br>
+
+                         Some top JSX frameworks may include ReactJs, AngularJs etc.<br>
+
+                          For the back end, we have Node.js, Flask, and Express,
+
+                          which is a framework of Node.js. The most common front-end languages are HTML(Hyper
+
+                         Text Markup Language) and CSS (Cascading style Sheet).<br>
+
+                        </p>
+				</div>
+				
+			</div>
+			<div>
+				<div style="margin-left: 13%; border-left: 8px solid rgb(162, 164, 245); max-width: 80%; margin-top: 13px; display: none;" class="domain" id="machine" >
+					<div style="background-color:rgb(162, 164, 245); margin-left: 0; text-align: center; min-height: 40px; padding: auto; letter-spacing: 3px; ">
+						<h3>MACHINE LEARNING</h3>
+					</div>
+					<p style="padding-left: 10px;">Machine learning is the science of getting computers to act without being explicitly programmed. It is a branch of Artificial Intelligence(AI) which is the broad science of mimicking human abilities.
+
+                      While many machine
+
+                     learning algorithms have been around for a long time, the ability to automatically apply complex mathematical calculations to big data over and over, faster and faster - is a recent development</p>
+                 <p style="padding-left: 10px;">
+                     Machine Learning is a very old branch of mathematics as Neural Networks had been idealized in the 1960s. So, why this upsurge in this branch of machine learning after 4 decades?
+
+                       Because, today, there has been an overflow of data in the market and the rise in computing power with the tools like CUDA (GPU acceleration to maths provided by NVIDIA) and innumerable open source libraries have deemed it possible for people with less resources to work on this field. Data crunching and getting out meaning from data is getting easier with the advancements in ML, delving into creative spaces.
+
+                        </p>
+                        <p style="padding-left: 10px;">
+                        What's required to create good machine learning systems? <br>
+
+                         •Data preparation capabilities <br>
+
+                         •Algorithms - basic and advanced • Automation and iterative processes <br>
+
+                         Scalability <br>
+
+                         •Ensemble modeling<br>
+                        </p>
+                        <p style="padding-left: 10px;">
+                        	Three of the most widely adopted machine learning methods are as follows but there are also other methods of machine learning. <br>
+
+                         Supervised learning is commonly used in applications where historical data predicts future events like stock markets, trends in market, etc.<br>
+
+                         Unsupervised learning algorithms are used to segment text topics, recommend items and identify data outliers.<br>
+
+                         Reinforcement learning is used for robotics, gaming and navigation.<br>
+                        </p>
+				</div>
+				
+			</div>
+	<div style="margin-left: 13%; border-left: 8px solid rgb(162, 164, 245); max-width: 80%; margin-top: 13px; display: none;" class="domain" id="manage">
+					<div style="background-color:rgb(162, 164, 245); margin-left: 0; text-align: center; min-height: 40px; padding: auto; letter-spacing: 3px; ">
+						<h3>MANAGEMENT</h3>
+					</div>
+					<p style="padding-left: 10px;">Management and leadership skills are often used interchangeably as they both involve planning, decision-making, problem-solving, communication, delegation, and time management. Good managers are almost always good leaders as well. In addition to leading, a critical role of a manager is to also ensure that all parts of the organization are functioning cohesive. Without such integration, several issues can arise and failure is bound to happen. Management skills are crucial for various positions and at different levels of a company, from top leadership to intermediate supervisors to first-level managers.</p>
+                 <p style="padding-left: 10px;">
+                     They include the capacity to perform executive duties in an organization while avoiding crisis situations and promptly solving problems when they occur.
+
+                     Management skills can be developed through learning and practical experience as a manager. The skills help the manager to relate with their fellow co-workers and know how to deal well with their subordinates, which allows for the easy flow of activities in the organization. Gaining experience in leadership roles is easy while at university, so be sure to take advantage of all opportunities.
+                        </p>
+				</div>
+</div>
+</div>
+<div style="background-color: white; margin-top: 0; outline: none;">
+	<div id="team" style="margin-top: 0; outline: none;">
+		<h1 style="text-align: center;font-size: 3em;text-shadow: rgba(100,0,0,0.8); background-color: rgba(162, 164, 245,1);max-height:70px; letter-spacing: 8px; margin-top: 0px;">TEAM</h1>
+	</div>
+	<div class="row container">
+		<div class="col-sm-12 col-lg-6">
+			<img src="dscpic\8.gif" style="max-width: 90%; max-height: 80%; min-height: 80%; min-width: 90%; margin: 0;">
+		</div>
+			<div class="col-lg-2 team-slide" style="margin-left: 10px;"> 
+			 <div style="width: 100%; height: 10%; background-color: rgb(218, 209, 222); text-align: center; font-size: 30px; margin-top: 3px;min-width: 200px; text-decoration: none; color: black; text-transform: none;">4-Th Year</div>
+			<!--<div style="border: 7px solid rgb(246, 235, 250)">
+				<ul>
+					<li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				</ul>
+			</div> -->
+		    <div class="effect1 slide1">
+			    <img src="dscpic\Screenshot(265).png" style="max-height: 240px; min-width: 200px; border: 12px solid rgb(218, 209, 222)">
+		    </div>
+		    <div class="effect1 slide1">
+			    <img src="dscpic\Screenshot(266).png" style="max-height: 240px; min-width: 200px;border: 12px solid rgb(218, 209, 222);">
+		    </div>
+		</div>
+			<div class="col-lg-2 team-slide1" style="margin-left: 60px;"> 
+			 <div style="width: 100%; height: 10%; background-color: rgb(218, 209, 222); text-align: center; font-size: 30px; margin-top: 3px;min-width: 200px; text-decoration: none; color: black; text-transform: none;">3rd-Year</div>
+			<!--<div style="border: 7px solid rgb(246, 235, 250)">
+				<ul>
+					<li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				</ul>
+			</div> -->
+		    <div class="effect2 slide2">
+			    <img src="dscpic\Screenshot(268).png" style="max-height: 240px; min-width: 200px; border: 12px solid rgb(218, 209, 222)">
+		    </div>
+		    <div class="effect2 slide2">
+			    <img src="dscpic\Screenshot(286).png" style="max-height: 240px; min-width: 200px;border: 12px solid rgb(218, 209, 222);">
+		    </div>
+		    <div class="effect2 slide2">
+			    <img src="dscpic\Screenshot(287).png" style="max-height: 240px; min-width: 200px;border: 12px solid rgb(218, 209, 222);">
+		    </div>
+		    <div class="effect2 slide2">
+			    <img src="dscpic\Screenshot(288).png" style="max-height: 240px; min-width: 200px;border: 12px solid rgb(218, 209, 222);">
+		    </div>
+		</div>
+		
+		<!-- <div class="col-lg-2" style="margin-left: 10px;"> 
+			<div style="width: 100%; height: 10%; background-color: rgb(246, 235, 250); text-align: center; font-size: 30px; margin-top: 25px;">3-Rd Year</div>
+			<div style="border: 7px solid rgb(246, 235, 250)">
+				<ul>
+					<li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				    <li>Mansi Gupta</li>
+				    <li>Jatin Pal</li>
+				</ul>
+			</div>
+		</div> 
+		<div>
+			<h2 style="text-align: center; padding-left: 40%;">4th Year</h2>
+			<div class="container row">
+			
+			<div class="col-lg-4 col-sm-12 col-md-6 main" style="box-sizing: border-box;">
+				<div class="container10">
+					<img src="C:\Users\HP\Desktop\dscPics\Screenshot(265)p.png" style="border-radius: 50%; border: solid 2px rgba(0,0,0,0.6); box-shadow: 2px 2px 4px 1px rgba(0,0,0,0.3); padding: 5px; max-height: 120px;">
+				</div>
+				<div class="container20">
+	      		<h4 style="font-family: Sen;
+                          font-weight: 700;
+                          color: rgb(66, 133, 244);
+                          font-size: 22px;
+                          min-width: 150px;">Mansi Goel</h4>
+				<h3 style="font-family: Sen;
+                     font-size: 16px;
+                     color: rgb(112, 112, 112);
+                     margin-bottom: 4px;
+                     min-width: 180px;
+                     padding-bottom:2px;
+                     text-align: center;
+                     border-bottom: 1px solid  rgba(112, 112, 112,0.5);">DSC Lead | Management</h3>
+                     <div style="box-sizing: border-box; display: inline;">
+                     	 <a href="#"><i class="fa fa-linkedin " aria-hidden="true"></i></a>
+                         <a href="#"><i class="fa fa-github " aria-hidden="true"></i></a>
+                         <a href="#"><i class="fa fa-paperclip " aria-hidden="true"></i></a>
+                     </div>
+				</div>
+               
+			</div>
+		</div>
+		</div>
+		
+	</div>
+	 <div class="container row">
+		<div class="col-lg-4 col-sm-12">
+			<img src="">
+		</div>
+	</div> -->
+</div>
+<div style="background-color: white;">
+	<div id="lead">
+		<h1 style="text-align: center;font-size: 3em;text-shadow: rgba(100,0,0,0.8); background-color: rgba(162, 164, 245,1);max-height:70px; letter-spacing: 8px;">Lead</h1>
+		<div class="row">
+			<div style="margin-left: 50px;">
+				<img src="dscpic\screenshot239.png" style="border-radius: 50%; border: 4px solid black; margin-left: 40%;" >
+				<h2 style="text-align: center; background-color: black; color: white; max-width: 250px; margin-left: 44%; margin-top: 4px;">MS. Mansi Goel</h2>
+				<h5 style="color: rgba(0,0,0,0.6); margin-left: 44%;">-Management | DSC Lead</h5>
+				<div style="background-color: rgba(0,0,0,0.1); width: 100%; min-width: 1200px; margin-left: 0;">
+					<h2 style="font-size: 35px; margin-left: 20%;">How to lead DSC?</h2>
+				<pre style="font-size: 20px; color: rgba(0,0,0,0.8);">
+		    -Have a minimum of two years left until graduation
+                    -Enrolled in an undergraduate program at a college or university
+                    -Can commit to program for one year
+                    -Passionate about creating impact in community
+                    -Strong technical understanding of computer programming and/or software engineering
+                    -Have experience with event planning or leading a team
+                    -Have some connection to the local developer community
+                    -Host a meetup event ideally once a month, and at least every 3 months
+				</pre>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div id="contact" style="background-color: white; margin-top: 0;">
+	<div style="background-color: rgb(162, 164, 245); margin-top: 0px;margin-left: 0;">
+		<h1 style="font-size: 80px; padding-left: 30px; text-align: center; outline: none;">
+		  CONTACT US</h1>
+
+	</div>
+	 <div class="container">
+	 	<div class="row">
+	 		<div class="col-lg-6">
+	 			<img src="dscpic\google-assistant-animations[1].gif" style="max-height: 80%;">
+	 		</div>
+	 		<div class="col-lg-6 container">
+	 			<a href="https://www.instagram.com/dsc_akgec/"><i class="fa fa-instagram" aria-hidden="true" style="font-size: 80px; font-weight: 30px; text-shadow: 4px 2px rgba(0,0,0,0.3); margin-left: 30%; margin-top: 20%;"></i></a>
+	 				
+	 				<a href="https://twitter.com/hashtag/dsc?lang=en">
+	 					<i class="fa fa-twitter" aria-hidden="true" style="font-size: 80px; font-weight: 30px; text-shadow: 4px 2px rgba(0,0,0,0.3); margin-left: 60%;"></i>
+	 				</a>	 
+	 				<a href="#"><i class="fa fa-telegram" aria-hidden="true"style="font-size: 80px; font-weight: 30px; text-shadow: 4px 2px rgba(0,0,0,0.3); margin-left: 30%;"></i>
+</a>
+	 	</div>
+	 </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type="text/javascript" src="dsc1.js"></script>
+</body>
+</html>
