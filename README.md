@@ -5,7 +5,7 @@ Frontend implemented technologies like HTML ,CSS ,JavaScript, Bootstrap.
 
 ## Link for deployed website
 
-[DSC-AKGEC](https://sonamgupta21.github.io/Student-Dveloper-Club/)
+https://sonamgupta21.github.io/Student-Dveloper-Club/
 
 ## To Run on Local Machine
 
